@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings" >
+        <ListPreference
+            android:defaultValue="100000"
+            android:dialogTitle="@string/setting_range_title"
+            android:entries="@array/list_range_name"
+            android:entryValues="@array/list_range_val"
+            android:key="delay"
+            android:title="@string/setting_range_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
