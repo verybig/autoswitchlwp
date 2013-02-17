@@ -67,7 +67,6 @@ public class Tool {
 	public static Bitmap getBitmap(Resources res, int imgId) {
 		Bitmap bit = BitmapFactory.decodeResource(res, imgId);
 		return bit;
-
 	}
 
 }

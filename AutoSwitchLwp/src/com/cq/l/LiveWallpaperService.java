@@ -9,8 +9,6 @@ import android.graphics.Paint;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.service.wallpaper.WallpaperService;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.SurfaceHolder;
 
 public class LiveWallpaperService extends WallpaperService {
@@ -104,6 +102,8 @@ public class LiveWallpaperService extends WallpaperService {
 							c.getHeight(), true);
 
 					c.drawBitmap(scbt, 0, 0, paint);
+					scbt = null;
+					bt = null;
 
 				}
 			} finally {
