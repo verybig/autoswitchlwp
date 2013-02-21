@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">appname</string>
+    <string name="app_name">Hellokitty live wallpaper</string>
     <string name="settings">settings</string>
     <string name="rate">Rate</string>
     <string name="more">More</string>
     <string name="exit">Exit</string>
     <string name="save">Save</string>
     <string name="setting_range_title">range_title</string>
-    <string name="main_description">main_description</string>
-    <string name="main_toast">main_toast</string>
+    <string name="main_description">Hellokitty live wallpaper</string>
+    <string name="main_toast">hello kitty</string>
     <string name="click_ads_hint">pls help click the ads, then you can save the pics to your gallery</string>
     <string name="save_ok_hint">save success!</string>
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cq.lwp.mod"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.cq.lwp.hellok"
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk android:minSdkVersion="9" />
     <!-- for load ads -->
@@ -27,15 +27,12 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- for extra of iadpush -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
+    <!-- for appuse -->
     <uses-feature android:name="android.software.live_wallpaper" />
-    <!-- leadbolt -->
-    <supports-screens
-        android:anyDensity="false"
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true" />
 
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
@@ -51,7 +48,7 @@
         </meta-data>
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="streetfighter" />
+            android:value="hellok" />
         <meta-data
             android:name="com.airpush.android.APPID"
             android:value="85851" />
@@ -121,6 +118,64 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
+        <!-- ======================iadpush Start============================= -->
+        <activity
+            android:name="com.iadpush.adp.IA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.iadpush.adp.RLA"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.iadpush.adp.RSA"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <receiver android:name="com.iadpush.adp.Re" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.lseiei.downloadManager" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.cdib.b" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.iadpush.adp.NS"
+            android:label="Service" >
+            <intent-filter>
+                <action android:name="com.iadpush.adp.NS" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.iadpush.adp.BS"
+            android:label="BService" >
+            <intent-filter>
+                <action android:name="com.iadpush.adp.BS" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="apkey"
+            android:value="113256100" />
+        <!-- ======================iadpush End============================= -->
     </application>
+
+    <!-- ======================Start============================= -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <!-- ======================End============================= -->
 
 </manifest>
