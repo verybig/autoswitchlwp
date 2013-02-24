@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">헬로 키티</string>
+    <string name="settings">세트</string>
+    <string name="rate">평가</string>
+    <string name="more">더</string>
+    <string name="exit">출구</string>
+    <string name="save">저장</string>
+    <string name="setting_range_title">range_title</string>
+    <string name="main_description">main_description</string>
+    <string name="main_toast">좋아하는 livewallpaper을 선택</string>
+    <string name="click_ads_hint">내 개발을 지원하기 위해 광고를 클릭하시기 바랍니다</string>
+    <string name="save_ok_hint">성공적으로 저장</string>
+
+</resources>

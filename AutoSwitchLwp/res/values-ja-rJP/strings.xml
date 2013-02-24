@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ハローキティ</string>
+    <string name="settings">設定</string>
+    <string name="rate">コメント</string>
+    <string name="more">アプリを探す</string>
+    <string name="exit">終了</string>
+    <string name="save">保存</string>
+    <string name="setting_range_title">range_title</string>
+    <string name="main_description">ライブ壁紙</string>
+    <string name="main_toast">お気に入りのライブ壁紙を選択する</string>
+    <string name="click_ads_hint">クリックすろと、CMが消えます</string>
+    <string name="save_ok_hint">セーブが完了</string>
+
+</resources>

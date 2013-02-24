@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloKitty 動態壁紙</string>
+    <string name="settings">設定</string>
+    <string name="rate">評級</string>
+    <string name="more">更多</string>
+    <string name="exit">退出</string>
+    <string name="save">保存</string>
+    <string name="setting_range_title">range_title</string>
+    <string name="main_description">動態壁紙</string>
+    <string name="main_toast">請選擇喜愛的壁紙</string>
+    <string name="click_ads_hint">請點擊廣告，支持我的開發</string>
+    <string name="save_ok_hint">保存成功</string>
+
+</resources>

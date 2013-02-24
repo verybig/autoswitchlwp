@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string-array name="list_range_name">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+    
+    <string-array name="list_range_val">
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+
+</resources>
