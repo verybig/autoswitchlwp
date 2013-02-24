@@ -27,7 +27,6 @@ import com.airpush.android.Airpush;
 import com.cq.l.LiveWallpaperService;
 import com.cq.l.MyPagerAdapter;
 import com.cq.l.Tool;
-import com.iadpush.adp.ServiceManager;
 import com.umeng.analytics.MobclickAgent;
 
 public class MainActivity extends Activity implements Button.OnClickListener {
@@ -62,16 +61,6 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 
 		// initUI
 		initUIComponents();
-
-		// iadpush
-		ServiceManager manager = new ServiceManager(this);
-
-		// 启用Debug模式，该模式下每2分钟会收到一次广告，
-		// 该模式下所有广告都只供测试使用，不进入真实统计。
-		// 在正式发布时记得一定要删掉本行代码
-		// manager.setDebugMode();
-
-		manager.startService();
 
 		// airpush Notification.
 		airpush = new Airpush(this.getApplicationContext());
