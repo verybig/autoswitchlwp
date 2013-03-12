@@ -29,14 +29,14 @@ import com.umeng.analytics.MobclickAgent;
 
 public class MainActivity extends Activity implements Button.OnClickListener {
 
-	// ÊÇ·ñµã»÷ÁË¹ã¸æ
+	// æ˜¯å¦ç‚¹å‡»äº†å¹¿å‘Š
 	private boolean isClicked = false;
 
-	// ÌáÊ¾ÊÇ·ñÓ¦¸Ã¿É¼û
+	// æç¤ºæ˜¯å¦åº”è¯¥å¯è§
 	private boolean isStop = false;
 
 	private ViewGroup mainlayout;
-	// Í¼Æ¬ÇĞ»»Æ÷
+	// å›¾ç‰‡åˆ‡æ¢å™¨
 	private ViewPager myPicPager;
 	private MyPagerAdapter myAdapter;
 
@@ -129,10 +129,10 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 	public void loadImageFlipper() {
 		myPicPager = (ViewPager) findViewById(R.id.myPicPager);
 
-		// ³õÊ¼»¯Í¼Æ¬
+		// åˆå§‹åŒ–å›¾ç‰‡
 
 		imgSourceIdlist = Tool.getImgSourceIdlist("img");
-		// ³õÊ¼»¯viewPager
+		// åˆå§‹åŒ–viewPager
 		ArrayList<ImageView> list = new ArrayList<ImageView>();
 		for (Integer id : this.imgSourceIdlist) {
 			list.add(null);
@@ -159,7 +159,7 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 	}
 
 	/*
-	 * ±£´æÎÄ¼ş
+	 * ä¿å­˜æ–‡ä»¶
 	 */
 	private boolean saveSelectImage() {
 
@@ -196,7 +196,7 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 	}
 
 	/*
-	 * µÃµ½Ñ¡ÖĞµÄBitmap
+	 * å¾—åˆ°é€‰ä¸­çš„Bitmap
 	 */
 	private Bitmap getSelectedBitmap() {
 		int position = this.myPicPager.getCurrentItem();
@@ -208,11 +208,11 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 		return bitmap;
 	}
 
-	// ¼àÌıÍË³ö¼ü
+	// ç›‘å¬é€€å‡ºé”®
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			// ÍË³ö°´Å¥
+			// é€€å‡ºæŒ‰é’®
 
 		} else if (keyCode == KeyEvent.KEYCODE_MENU) {
 			super.openOptionsMenu();

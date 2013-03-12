@@ -19,13 +19,13 @@ public class Tool {
 	private static ArrayList<Integer> imgSourceIdlist = null;
 
 	/**
-	 * ×°ÔØÍ¼Æ¬×ÊÔ´µ½Êı×é
+	 * è£…è½½å›¾ç‰‡èµ„æºåˆ°æ•°ç»„
 	 */
 	public static ArrayList<Integer> getImgSourceIdlist(String prefix) {
 		if (imgSourceIdlist != null) {
 			return imgSourceIdlist;
 		}
-		// ÓÃ·´Éä×°ÔØÍ¼Æ¬Êı×é
+		// ç”¨åå°„è£…è½½å›¾ç‰‡æ•°ç»„
 		Class<drawable> cc = R.drawable.class;
 		Field[] fields = cc.getFields();
 		imgSourceIdlist = new ArrayList<Integer>();
