@@ -9,7 +9,6 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.cq.lwp.hellok.MainActivity;
 
 public class MyPagerAdapter extends PagerAdapter {
 	private ArrayList<ImageView> views;

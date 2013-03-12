@@ -11,8 +11,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
-import com.cq.lwp.hellok.R;
-import com.cq.lwp.hellok.R.drawable;
+import com.cq.l.R;
+import com.cq.l.R.drawable;
 
 public class Tool {
 

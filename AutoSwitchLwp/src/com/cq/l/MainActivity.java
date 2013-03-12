@@ -1,4 +1,4 @@
-package com.cq.lwp.hellok;
+package com.cq.l;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,9 +24,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.airpush.android.Airpush;
-import com.cq.l.LiveWallpaperService;
-import com.cq.l.MyPagerAdapter;
-import com.cq.l.Tool;
+import com.cq.l.R.*;
 import com.umeng.analytics.MobclickAgent;
 
 public class MainActivity extends Activity implements Button.OnClickListener {
