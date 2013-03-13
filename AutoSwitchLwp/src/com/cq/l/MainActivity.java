@@ -133,7 +133,7 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 
 		// 初始化图片
 
-		imgSourceIdlist = Tool.getImgSourceIdlist("any");
+		imgSourceIdlist = Tool.getImgSourceIdlist("img");
 		// 初始化viewPager
 		ArrayList<ImageView> list = new ArrayList<ImageView>();
 		for (Integer id : this.imgSourceIdlist) {
