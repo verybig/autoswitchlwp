@@ -108,16 +108,16 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 		loadImageFlipper();
 
 		// add listener for the buttons
-		ImageButton settings_btn = (ImageButton) this.findViewById(R.id.settings_btn);
+		Button settings_btn = (Button) this.findViewById(R.id.settings_btn);
 		settings_btn.setOnClickListener(this);
 
-		ImageButton rate_btn = (ImageButton) this.findViewById(R.id.rate_btn);
+		Button rate_btn = (Button) this.findViewById(R.id.rate_btn);
 		rate_btn.setOnClickListener(this);
 
-		ImageButton save_btn = (ImageButton) this.findViewById(R.id.save_btn);
+		Button save_btn = (Button) this.findViewById(R.id.save_btn);
 		save_btn.setOnClickListener(this);
 
-		ImageButton more_btn = (ImageButton) this.findViewById(R.id.get_more);
+		Button more_btn = (Button) this.findViewById(R.id.get_more);
 		more_btn.setOnClickListener(this);
 /*
 		Button exit_btn = (Button) this.findViewById(R.id.exit);
