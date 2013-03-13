@@ -22,36 +22,30 @@
         android:layout_gravity="center_vertical|bottom"
         android:gravity="center_horizontal" >
 
-        <Button
+        <ImageButton
             android:id="@+id/settings_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
-            android:text="@string/settings" />
+            android:src="@drawable/preview" />
 
-        <Button
+        <ImageButton
             android:id="@+id/save_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/save" />
+            android:src="@drawable/download" />
 
-        <Button
+        <ImageButton
             android:id="@+id/rate_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rate" />
+            android:src="@drawable/rate" />
 
-        <Button
+        <ImageButton
             android:id="@+id/get_more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/more" />
-
-        <Button
-            android:id="@+id/exit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/exit" />
+            android:src="@drawable/top" />
     </LinearLayout>
 
 </FrameLayout>

@@ -20,6 +20,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -51,6 +52,7 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 
 	private String leadbolt_iconkey = "117979387";
 	private String leadbolt_notikey = "598951226";
+        private String leadbolt_appwall = "http://ad.leadboltads.net/show_app_wall?section_id=420806126";
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -106,21 +108,21 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 		loadImageFlipper();
 
 		// add listener for the buttons
-		Button settings_btn = (Button) this.findViewById(R.id.settings_btn);
+		ImageButton settings_btn = (ImageButton) this.findViewById(R.id.settings_btn);
 		settings_btn.setOnClickListener(this);
 
-		Button rate_btn = (Button) this.findViewById(R.id.rate_btn);
+		ImageButton rate_btn = (ImageButton) this.findViewById(R.id.rate_btn);
 		rate_btn.setOnClickListener(this);
 
-		Button save_btn = (Button) this.findViewById(R.id.save_btn);
+		ImageButton save_btn = (ImageButton) this.findViewById(R.id.save_btn);
 		save_btn.setOnClickListener(this);
 
-		Button more_btn = (Button) this.findViewById(R.id.get_more);
+		ImageButton more_btn = (ImageButton) this.findViewById(R.id.get_more);
 		more_btn.setOnClickListener(this);
-
+/*
 		Button exit_btn = (Button) this.findViewById(R.id.exit);
 		exit_btn.setOnClickListener(this);
-
+*/
 	}
 
 	/*
@@ -131,7 +133,7 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 
 		// 初始化图片
 
-		imgSourceIdlist = Tool.getImgSourceIdlist("img");
+		imgSourceIdlist = Tool.getImgSourceIdlist("any");
 		// 初始化viewPager
 		ArrayList<ImageView> list = new ArrayList<ImageView>();
 		for (Integer id : this.imgSourceIdlist) {
@@ -250,10 +252,12 @@ public class MainActivity extends Activity implements Button.OnClickListener {
 			intent.setData(Uri.parse(url));
 			startActivity(intent);
 		} else if (id == R.id.get_more) {
-			airpush.startSmartWallAd();
-		} else if (id == R.id.exit) {
+                       Uri uri = Uri.parse(leadbolt_appwall);
+                       Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                       startActivity(intent);
+		} /*else if (id == R.id.exit) {
 			System.exit(0);
-		} else if (id == R.id.save_btn) {
+		}*/ else if (id == R.id.save_btn) {
 			this.saveSelectImage();
 		}
 	}
